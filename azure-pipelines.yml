@@ -2,8 +2,8 @@ trigger:
   - main
 
 variables:
-  azureServiceConnectionId: 'a08b4ecc-aa03-4056-8d11-66deb4c26b54'
-  webAppName: 'E-commSemanticSearch'
+  azureServiceConnectionId: '36a2cb05-9519-46fb-8f71-1f26ceebbcd9'
+  webAppName: 'yuchi-simple-deploy-demo'
   pythonVersion: '3.11'
 
 stages:
@@ -44,7 +44,7 @@ stages:
       - deployment: DeploymentJob
         pool:
           name: selfhosted-pool
-        environment: E-commSemanticSearch
+        environment: yuchi-simple-deploy-demo
         strategy:
           runOnce:
             deploy:
